@@ -1,0 +1,128 @@
+﻿
+<html>
+
+<head>
+	
+<title>Les formulaires HTML</title>
+	
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="s.css" type="text/css">
+</head>
+
+<body>
+	
+<h1>English Language Education Registration Form</h1>
+	
+<form method="" action="">
+		
+<fieldset>
+			
+<legend>Student Personal Details</legend>
+
+			
+<label style="width:200px; display:inline-block">Family Name</label>
+			
+<input type="text"  name="nom" required  placeholder="your Family name" maxlength="25"><br>			
+<label style="width:200px; display:inline-block">Name</label>
+			
+<input type="text" name="prenom" required placeholder="your Name"><br>
+			
+<label style="width:200px; display:inline-block">Phone Number</label>
+			
+<input type="tel" name="phone" required placeholder="phone:xx-xx-xx-xx-xx" maxlength="14"><br>
+			
+<label style="width:200px; display:inline-block">Mail Address</label>
+			
+<input type="email" name="m"  required placeholder="Your Mail Adress"><br>
+					
+<label style="width:200px; display:inline-block">Birth Date</label>
+			
+<input type="text" name="bd" required placeholder="Your Birth Date"><br>
+			
+<label style="width:200px; display:inline-block">Spoken Langauges:</label>
+	
+<input type="checkbox" name="lan" >
+
+<label>English</label>
+	
+<input type="checkbox" name="lan" >
+
+<label>French</label>
+	
+<input  type="checkbox" name="lan" >
+
+<label>Arabic</label>
+		
+</fieldset>
+		
+<fieldset>
+			
+<legend>Education Background</legend>
+			
+<label style="width:600px; display:inline-block">What is your level in english ? </label>
+<input type="radio" name="lev" >
+
+<label>low</label>
+	
+<input type="radio" name="lev" >
+
+<label>middle</label>
+	
+<input type="radio" name="lev" >
+
+<label>high</label><br>	
+<label style="width:600px; display:inline-block">Have you taken an international English test in the last two years? </label>
+<input type="radio" name="te" >
+
+<label>yes</label>
+	
+<input type="radio" name="te" >
+
+<label>no</label>
+<br>	
+<label style="width:600px; display:inline-block">if yes,Which test?</label>
+	
+<select name="r" >
+<br>
+<option value="" ></option>
+<option value="IELTS" >IELTS
+</option>
+<option value="TOEFL" >
+TOEFL</option>
+<option value="CPE" >CPE
+</option>
+
+
+</select>
+
+<br>
+<label style="width:600px; display:inline-block">Score</label>
+	
+<input style="width:200px;" type="number" name="tests" placeholder="30.5" min="1" max="100" >%
+
+<br>
+<label style="width:600px; display:inline-block">Please attach a copy of your certificate</label>
+			
+<input type="file" name="img">
+		
+</fieldset>
+		
+<fieldset>
+			
+<legend>Your Leisure</legend>
+			
+<textarea cols="100" rows="8" placeholder="insert here some of your leisures!" >
+	</textarea>
+		
+</fieldset>
+		
+<input style=" width:100px;position:relative; left:300px;background-color:blue; color:white; border-radius:15px;" type="submit" name="V" value="Validate">
+		
+<input style=" width:100px;position:relative; left:500px; background-color:blue; color:white; border-radius:15px;" type="reset" name="r" value="reset">
+	
+</form>
+
+</body>
+
+</html>
